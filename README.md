@@ -2,6 +2,18 @@
 
 A Python-based media player with a sleek SnakeEye theme. This is an open-source starter project designed for learning, customization, and community contributions.
 
+## 📥 Download
+
+### Windows Installer
+
+**Download the latest Windows installer from [Releases](https://github.com/SnakeEye-sudo/SnakeMediaPlayer/releases)**
+
+Get the official Windows EXE installer for SnakeMediaPlayer from our [Releases page](https://github.com/SnakeEye-sudo/SnakeMediaPlayer/releases). The installer includes all necessary dependencies and provides an easy setup experience.
+
+👉 **[Click here to download the latest version](https://github.com/SnakeEye-sudo/SnakeMediaPlayer/releases/latest)**
+
+---
+
 ## About
 
 **Developer:** Er. Sangam Krishna  
@@ -9,6 +21,7 @@ A Python-based media player with a sleek SnakeEye theme. This is an open-source 
 **Email:** Krishna.sangam11@gmail.com
 
 ### Connect with me:
+
 - 🔗 [LinkedIn](https://www.linkedin.com/in/sangam-k-799ba8373/)
 - 🐦 [Twitter/X](https://x.com/SangamKrishna3)
 - 📸 [Instagram](https://www.instagram.com/sangam_krishnaa_/)
@@ -20,59 +33,37 @@ A Python-based media player with a sleek SnakeEye theme. This is an open-source 
 - 🎵 Play audio and video files
 - 🎨 Custom SnakeEye-themed UI
 - ⏯️ Basic playback controls (play, pause, stop, next, previous)
-- 📂 File browser for media selection
+- 📂 Playlist management
 - 🔊 Volume control
-- 📝 Playlist management
-
-## Project Structure
-
-```
-SnakeMediaPlayer/
-│
-├── assets/
-│   ├── icons/
-│   │   └── snakeeye_icon.png
-│   └── themes/
-│       └── snakeeye_theme.css
-│
-├── src/
-│   ├── main.py
-│   ├── player_ui.py
-│   └── media_player.py
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
+- 🎬 Support for multiple media formats
 
 ## Installation
 
-1. Clone this repository:
-```bash
-git clone https://github.com/SnakeEye-sudo/SnakeMediaPlayer.git
-cd SnakeMediaPlayer
-```
+### From Source
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SnakeEye-sudo/SnakeMediaPlayer.git
+   cd SnakeMediaPlayer
+   ```
 
 2. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Run the application:
-```bash
-python src/main.py
-```
+   ```bash
+   python main.py
+   ```
 
-## Requirements
+### From Windows Installer
 
-- Python 3.8+
-- PyQt5 or Tkinter (for GUI)
-- pygame (for media playback)
-- python-vlc (optional, for advanced playback)
+Download and run the installer from the [Releases page](https://github.com/SnakeEye-sudo/SnakeMediaPlayer/releases) for a hassle-free installation.
 
 ## Usage
 
-1. Launch the application
+1. Launch SnakeMediaPlayer
 2. Click "Open File" to select a media file
 3. Use playback controls to play, pause, or stop the media
 4. Adjust volume using the volume slider
