@@ -1,0 +1,77 @@
+/*
+ * SnakeEye Theme for SnakeMediaPlayer
+ * Developer: Er. Sangam Krishna
+ * GitHub: @SnakeEye-sudo
+ * 
+ * Color Scheme:
+ * - Background: Deep Black (#0a0a0a)
+ * - Primary: Bright Green (#00ff00)
+ * - Secondary: Dark Green (#1a4d2e)
+ * - Accent: Medium Green (#00aa00)
+ * - Text: Bright Green (#00ff00)
+ */
+
+/* Main Window Styling */
+.main-window {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+/* Title Bar */
+.title-bar {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a4d2e 100%);
+    color: #00ff00;
+    border-bottom: 2px solid #00aa00;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* Buttons */
+.button {
+    background-color: #1a4d2e;
+    color: #00ff00;
+    border: 2px solid #00aa00;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2a5d3e;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #0a3d1e;
+    transform: scale(0.98);
+}
+
+/* Sliders */
+.slider {
+    background: #1a4d2e;
+    border-radius: 4px;
+}
+
+/* Snake Eye Logo Effect */
+.snake-eye-logo {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #0a0a0a 30%, #00ff00 31%, #00ff00 40%, transparent 41%);
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px #00ff00; }
+    50% { box-shadow: 0 0 30px #00ff00; }
+}
