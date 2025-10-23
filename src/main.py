@@ -4,9 +4,10 @@ SnakeMediaPlayer - Main Entry Point
 Developer: Er. Sangam Krishna
 GitHub: @SnakeEye-sudo
 """
-
 import sys
+import os
 from PyQt5.QtWidgets import QApplication
+from PyQt5.QtGui import QIcon
 from player_ui import MediaPlayerUI
 
 def main():
@@ -20,6 +21,11 @@ def main():
     app.setApplicationName("SnakeMediaPlayer")
     app.setOrganizationName("SnakeEye")
     app.setApplicationVersion("1.0.0")
+    
+    # Set application icon
+    icon_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets', 'icons', 'generated-image.jpg')
+    if os.path.exists(icon_path):
+        app.setWindowIcon(QIcon(icon_path))
     
     # Create and show the main window
     player = MediaPlayerUI()
