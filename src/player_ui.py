@@ -4,7 +4,6 @@ SnakeMediaPlayer - User Interface Module
 Developer: Er. Sangam Krishna
 GitHub: @SnakeEye-sudo
 """
-
 from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QSlider, QLabel, QFileDialog, QListWidget
@@ -33,6 +32,11 @@ class MediaPlayerUI(QMainWindow):
         """
         self.setWindowTitle("🐍 SnakeMediaPlayer")
         self.setGeometry(100, 100, 800, 600)
+        
+        # Set window icon
+        icon_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets', 'icons', 'generated-image.jpg')
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
         
         # Apply SnakeEye theme (dark green/black theme)
         self.setStyleSheet("""
